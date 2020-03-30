@@ -5,8 +5,13 @@ export const threeMonth = () => {
     <div className="month-container">
       <h3>Three Month's Contract</h3>
       <div className="month-summary">
+        <h4>
+          3 month term with 6 payments.
+        </h4>
         <p>
-          3 month term with 6 payments within the Contract.
+        Cronut migas plaid helvetica marfa. Fingerstache keytar literally activated charcoal. 
+        Dreamcatcher fam bespoke la croix. Keffiyeh paleo intelligentsia, 
+        letterpress kogi pabst la croix tote bag godard aesthetic copper mug.
         </p>
       </div>
     </div>

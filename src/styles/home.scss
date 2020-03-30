@@ -1,4 +1,9 @@
 .home-container {
+  display: block;
+
+  .home-title {
+    color: $dark;
+  }
 
   .links-container {
     display: flex;
@@ -7,6 +12,15 @@
 
     .single-link {
       padding: 10px;
+
+    }
+    .btn-page {
+      @include base-border-radius();
+      cursor: pointer;
+      background-color: darkcyan;
+      color: whitesmoke;
+      padding: 10px;
+      margin: 10px;
     }
   }
 }

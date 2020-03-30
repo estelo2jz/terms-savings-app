@@ -1,38 +1,64 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, 
-  Switch, 
-  Route, 
-  Link
-} from 'react-router-dom';
-import OneMonth from '../months/oneMonth';
-import TwoMonth from '../months/twoMonth';
-import ThreeMonth from '../months/threeMonth';
+import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
-const home = () => {
+const Home = (props) => {
   return (
     <div className="home-container">
-      <Router>
-        <div className="links-container">
-          <div className="single-link">
-           <OneMonth />
+      <h3 className="home-title">Expore our Term's</h3>
+      
+      <div className="links-container">
+        <div className="single-link">
+          <div className="month-container">
+            <h3>One Month's Contract</h3>
+            <div className="month-summary">
+              <p>1 month term with 2 payments.</p>
+            </div>
           </div>
-          <div className="single-link">
-            <TwoMonth />
-          </div>
-          <div className="single-link">
-            <ThreeMonth />
+        
+          <div>
+            <NavLink to="./oneMonth" activeClassName="nav-link-active">
+                <button className="btn-page">
+                  Go to Page
+                </button>
+            </NavLink>
           </div>
         </div>
 
-        <Switch>
-          {/* <Route path="/oneMonth"><OneMonth /></Route>
-          <Route path="/twoMonth"><TwoMonth /></Route>
-          <Route path="/threeMonth"><ThreeMonth /></Route> */}
-        </Switch>
-      </Router>
+        <div className="single-link">
+          <div className="month-container">
+            <h3>One Month's Contract</h3>
+            <div className="month-summary">
+              <p>1 month term with 2 payments.</p>
+            </div>
+          </div>
+          <div>
+            <NavLink to="/twoMonth" activeClassName="nav-link-active">
+              <button className="btn-page">
+                Go to Page
+              </button>
+            </NavLink>
+          </div>
+        </div>
+        
+        <div className="single-link">
+         <div className="month-container">
+            <h3>One Month's Contract</h3>
+            <div className="month-summary">
+              <p>1 month term with 2 payments.</p>
+            </div>
+          </div>
+          <div>
+            <NavLink to="/threeMonth" activeClassName="nav-link-active">
+              <button className="btn-page">
+                Go to Page
+              </button>
+            </NavLink>
+        </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default home;
+export default withRouter(Home);

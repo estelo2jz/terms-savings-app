@@ -1,0 +1,12 @@
+.home-container {
+
+  .links-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    .single-link {
+      padding: 10px;
+    }
+  }
+}

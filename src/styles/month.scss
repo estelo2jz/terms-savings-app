@@ -1,0 +1,17 @@
+.month-container {
+  @include base-border-radius();
+
+  border: 2px solid green;
+
+  h3 {
+    @include base-border-radius();
+
+    background-color: #FAEBD7;
+    margin: 10px;
+  }
+
+  .month-summary {
+    padding: 10px;
+    font-weight: 500;
+  }
+}

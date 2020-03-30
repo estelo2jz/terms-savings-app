@@ -1,0 +1,16 @@
+.nav {
+  .nav-title {
+    font-family: 'Roboto Mono', monospace;
+    color: darkcyan;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    a {
+      text-decoration: none;
+      color: darkblue;
+      padding: 20px;
+    }
+  }
+}

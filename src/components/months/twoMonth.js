@@ -4,10 +4,12 @@ import Month from "./month";
 const TwoMonth = props => {
 
     return (
-      <Month 
-        numberOfMonths="2 month's"
-        numberOfPayments="2 month's term with 4 payments"
-      />
+      <div>
+        <Month 
+          numberOfMonths="2 month's"
+          numberOfPayments="2 month's term with 4 payments"
+        />
+      </div>
     )
 }
 

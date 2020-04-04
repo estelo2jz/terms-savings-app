@@ -7,6 +7,7 @@
   .month-title {
     display: flex;
     justify-content: center;
+    padding: 10px;
 
     .month-heading {
       
@@ -45,4 +46,9 @@
     
     }
   }
+}
+
+.btn-back {
+  @include base-btn();
+  display: block;
 }

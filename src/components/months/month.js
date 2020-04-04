@@ -1,27 +1,51 @@
-import React from 'react';
-import { withRouter } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import React, { Component } from 'react';
 
-const Month = (props) => {
-  return (
-    <div className="nav">
-      <h1 className="nav-title">Term's of Saving</h1>
-      <div className="nav-links">  
-        <div className="nav-single">
-          <NavLink exact to="oneMonth" activeClassName="nav-link-active">GO To Page</NavLink>
+export default class Months extends Component {
+  render() {
+    return (
+      <div className="month-container">
+        <div className="month-title">
+          <div className="month-heading">
+            <h3>{this.props.numberOfMonths} Contract</h3>
+          </div>
         </div>
-        <div className="nav-single">
-          <NavLink to="/dashboard" activeClassName="nav-link-active">Dashboard</NavLink>
-        </div>
-        <div className="nav-single">
-          <NavLink to="/about" activeClassName="nav-link-active">About</NavLink>
-        </div>
-        <div className="nav-single">
-          <NavLink to="/contact" activeClassName="nav-link-active">Contact</NavLink>
+        <div className="month-summary-container">
+          <div className="month-summary">
+            <h4>
+              {this.props.numberOfPayments}
+            </h4>
+            <p>
+              Cronut migas plaid helvetica marfa. Fingerstache keytar literally activated charcoal. 
+              Dreamcatcher fam bespoke la croix. Keffiyeh paleo intelligentsia, 
+              letterpress kogi pabst la croix tote bag godard aesthetic copper mug.
+            </p>
+            
+            <p>
+              Nisi porta lorem mollis aliquam ut. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. 
+              Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Aliquam faucibus purus in massa. 
+              In eu mi bibendum neque egestas congue quisque egestas diam. Tellus rutrum tellus pellentesque eu. 
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
-export default withRouter(Month);
+
+{/* <h1 className="nav-title">Term's of Saving</h1>
+<div className="nav-links">  
+  <div className="nav-single">
+    <NavLink exact to="/oneMonth" activeClassName="nav-link-active">Go To Page</NavLink>
+  </div>
+  <div className="nav-single">
+    <NavLink to="/dashboard" activeClassName="nav-link-active">Dashboard</NavLink>
+  </div>
+  <div className="nav-single">
+    <NavLink to="/about" activeClassName="nav-link-active">About</NavLink>
+  </div>
+  <div className="nav-single">
+    <NavLink to="/contact" activeClassName="nav-link-active">Contact</NavLink>
+  </div>
+</div> */}
+// withRouter(Month)

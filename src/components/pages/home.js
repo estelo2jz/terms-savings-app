@@ -2,22 +2,21 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
+import Month from '../months/month';
+
 const Home = (props) => {
   return (
     <div className="home-container">
-      <h3 className="home-title">Expore our Term's</h3>
+      <h3 className="home-title">Explore our Term's</h3>
       
       <div className="links-container">
         <div className="single-link">
-          <div className="month-container">
-            <h3>One Month's Contract</h3>
-            <div className="month-summary">
-              <p>1 month term with 2 payments.</p>
-            </div>
-          </div>
-        
+          <Month
+            numberOfMonths="1 month"
+            numberOfPayments="1 month term with 2 payments"
+          />
           <div>
-            <NavLink to="./oneMonth" activeClassName="nav-link-active">
+            <NavLink to="/oneMonth" activeClassName="nav-link-active">
                 <button className="btn-page">
                   Go to Page
                 </button>
@@ -26,12 +25,10 @@ const Home = (props) => {
         </div>
 
         <div className="single-link">
-          <div className="month-container">
-            <h3>One Month's Contract</h3>
-            <div className="month-summary">
-              <p>1 month term with 2 payments.</p>
-            </div>
-          </div>
+          <Month
+            numberOfMonths="2 month's"
+            numberOfPayments="2 month's term with 6 payments"
+          />
           <div>
             <NavLink to="/twoMonth" activeClassName="nav-link-active">
               <button className="btn-page">
@@ -42,12 +39,10 @@ const Home = (props) => {
         </div>
         
         <div className="single-link">
-         <div className="month-container">
-            <h3>One Month's Contract</h3>
-            <div className="month-summary">
-              <p>1 month term with 2 payments.</p>
-            </div>
-          </div>
+          <Month
+            numberOfMonths="3 month's"
+            numberOfPayments="3 month's term with 6 payments"
+          />
           <div>
             <NavLink to="/threeMonth" activeClassName="nav-link-active">
               <button className="btn-page">

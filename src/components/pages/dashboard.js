@@ -7,7 +7,7 @@ export default class Dashboard extends Component {
         <h3>Dashboard</h3>
         <div className="dashboard-space-one">
           <div className="dashboard-space-two">
-            <div className="boxes">Next Payment</div>
+            <div className="dashboard-heading">Next Payment</div>
             <div className="dashboard-info">
               <p>
                 taiyaki pinterest scenester fashion axe skateboard occupy hot chicken 
@@ -16,7 +16,7 @@ export default class Dashboard extends Component {
             </div>
           </div>
           <div className="dashboard-space-two">
-            <div className="boxes">Last Payment</div>
+            <div className="dashboard-heading">Last Payment</div>
             <div className="dashboard-info">
               <p>
                 I'm baby unicorn hexagon palo santo man braid single-origin coffee 
@@ -26,7 +26,7 @@ export default class Dashboard extends Component {
           </div>
           
           <div className="dashboard-space-two">
-            <div className="boxes">Roster</div>
+            <div className="dashboard-heading">Roster</div>
             <div className="dashboard-info">
               <p>
                 Coloring book echo park distillery, live-edge mustache taxidermy direct trade. 
@@ -35,7 +35,7 @@ export default class Dashboard extends Component {
             </div>
           </div>
           <div className="dashboard-space-two">
-            <div className="boxes">Account Details</div>
+            <div className="dashboard-heading">Account Details</div>
             <div className="dashboard-info">
               <p>
                 taiyaki pinterest scenester fashion axe skateboard occupy hot chicken 
@@ -44,7 +44,7 @@ export default class Dashboard extends Component {
             </div>
           </div>
           <div className="dashboard-space-two">
-            <div className="boxes">Total Earnings</div>
+            <div className="dashboard-heading">Total Earnings</div>
             <div className="dashboard-info">
               <p>
                 enamel pin mumblecore. Echo park hell of messenger bag 3 wolf moon. 
@@ -53,7 +53,7 @@ export default class Dashboard extends Component {
             </div>
           </div>
           <div className="dashboard-space-two">
-            <div className="boxes">Settings</div>
+            <div className="dashboard-heading">Settings</div>
             <div className="dashboard-info">
               <p>
                 I'm baby unicorn hexagon palo santo man braid single-origin coffee 

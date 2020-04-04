@@ -1,3 +1,13 @@
 @mixin base-border-radius() {
   border-radius: 5px;
 }
+
+@mixin base-btn() {
+  @include base-border-radius();
+  cursor: pointer;
+  background-color: darkcyan;
+  color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border: transparent;
+}

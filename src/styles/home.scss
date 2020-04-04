@@ -2,7 +2,7 @@
   display: block;
 
   .home-title {
-    color: $dark;
+    color: darkcyan;
   }
 
   .links-container {
@@ -13,14 +13,30 @@
     .single-link {
       padding: 10px;
 
+      .home-container {
+
+        h3 {
+          @include base-border-radius();
+          font-family: 'Mukta Vaani', sans-serif;
+          height: 10%;
+          background-color: #FAEBD7;
+          margin-bottom: 5px;
+          padding: 5px;
+        }
+        
+        .home-summary {
+          @include base-border-radius();
+          font-family: 'DM Sans', sans-serif;
+          background-color: #FFF0F5;
+          padding: 10px;
+          font-weight: 500;
+        }
+      }
+
     }
     .btn-page {
       @include base-border-radius();
-      cursor: pointer;
-      background-color: darkcyan;
-      color: whitesmoke;
-      padding: 10px;
-      margin: 10px;
+      @include base-btn();      
     }
   }
 }

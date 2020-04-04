@@ -1,20 +1,48 @@
 .month-container {
   @include base-border-radius();
+  display: grid;
+  grid-auto-columns: 1;
+  align-items: center;
+  
+  .month-title {
+    display: flex;
+    justify-content: center;
 
-
-  h3 {
-    @include base-border-radius();
-
-    background-color: #FAEBD7;
-    border: 1px solid #DAA520;
-    margin: 5px;
-    padding: 5px;
+    .month-heading {
+      
+    
+      h3 {
+        @include base-border-radius();
+        font-family: 'Mukta Vaani', sans-serif;
+        // height: 10%;
+        // width: 20%;
+        background-color: darkcyan;
+        color: white;
+        margin: 5px;
+        padding: 10px;
+      }
+    }
   }
 
-  .month-summary {
-    @include base-border-radius();
-    background-color: #FFF0F5;
+  .month-summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    font-weight: 500;
+    height: 100%;
+    width: 100%;
+
+    .month-summary {
+    @include base-border-radius();
+    font-family: 'DM Sans', sans-serif;
+    // background-color: #FFF0F5;
+    height: 100%;
+    width: 80%;
+
+      p {
+        padding: 10px;
+      }
+    
+    }
   }
 }

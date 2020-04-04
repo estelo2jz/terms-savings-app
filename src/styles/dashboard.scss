@@ -6,35 +6,38 @@
   }
 
   .dashboard-space-one {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
     justify-content: center;
-    // background-color: #5F9EA0;
-    height: 100%;
+    height: 500px;
+    width: 100%;
 
     .dashboard-space-two {
-      align-items: center;
-      width: 100%;
+      padding: 20px;
       height: 100%;
-      position: relative;
-      margin-top: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
+      
 
-      .boxes {
+      .dashboard-heading {
         @include base-border-radius();
-
+        height: 10%;
         padding: 10px;
         margin-bottom: 5px;
-        background-color: #FAEBD7;
+        background-color: darkcyan;
+        color: white;
         font-weight: 700;
-        border: 1px solid #DAA520;
+        // border: 1px solid rgb(0, 0, 0);
       }
 
       .dashboard-info {
         @include base-border-radius();
+        padding: 5px 30px;
+        // background-color: #FFF0F5;
 
-        padding: 5px;
-        background-color: #FFF0F5;
+        p {
+          height: 50%;
+          padding: 10px;
+        }
       }
     }
   }

@@ -40,3 +40,13 @@
     }
   }
 }
+
+@media(max-width: 500px) {
+  .home-container {
+    .links-container {
+      display: grid;
+      grid-auto-columns: 1fr;
+      padding: 10px;
+    }
+  }
+}

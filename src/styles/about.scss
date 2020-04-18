@@ -3,3 +3,11 @@
     color: darkcyan;
   }
 }
+
+@media(max-width: 500px) {
+  .about-app {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}

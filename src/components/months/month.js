@@ -19,12 +19,6 @@ export default class Months extends Component {
               Dreamcatcher fam bespoke la croix. Keffiyeh paleo intelligentsia, 
               letterpress kogi pabst la croix tote bag godard aesthetic copper mug.
             </p>
-            
-            <p>
-              Nisi porta lorem mollis aliquam ut. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. 
-              Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Aliquam faucibus purus in massa. 
-              In eu mi bibendum neque egestas congue quisque egestas diam. Tellus rutrum tellus pellentesque eu. 
-            </p>
           </div>
         </div>
       </div>

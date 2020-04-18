@@ -3,3 +3,11 @@
     color: darkcyan;
   }
 }
+
+@media(max-width: 500px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}

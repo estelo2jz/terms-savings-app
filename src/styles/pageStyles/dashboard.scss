@@ -7,23 +7,30 @@
 
   .dashboard-space-one {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
     justify-content: center;
     height: 500px;
     width: 100%;
 
+    // .dashboard-space-container {
+    //   display: grid;
+
+    // }
+
     .dashboard-space-two {
       padding: 20px;
-      height: 100%;
+      height: 20vh;
       
-
       .dashboard-heading {
         @include base-border-radius();
+        display: grid;
+        justify-content: center;
+        align-items: center;
         height: 10%;
         padding: 10px;
         margin-bottom: 5px;
-        background-color: darkcyan;
+        background-color: black;
         color: white;
         font-weight: 700;
         // border: 1px solid rgb(0, 0, 0);
@@ -32,7 +39,9 @@
       .dashboard-info {
         @include base-border-radius();
         padding: 5px 30px;
-        // background-color: #FFF0F5;
+        background-color: #c3c3eb;
+        border-top-left-radius: 25px;
+        height: 70%;
 
         p {
           height: 50%;

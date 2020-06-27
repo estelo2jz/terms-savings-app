@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import SignInForm from '../forms/signInForm';
 
 const Login = () => {
   return (
     <div>
-      login
+      <h1>
+        Login
+      </h1>
+      <SignInForm />
     </div>
   )
 }

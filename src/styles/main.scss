@@ -1,10 +1,16 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "./navigation.scss";
-@import "./home.scss";
-@import "./about.scss";
-@import "./dashboard.scss";
-@import "./login.scss";
-@import "./nomatch.scss";
-@import "./contact.scss";
 @import "./month.scss";
+@import "./navigation.scss";
+
+@import "./pageStyles/home.scss";
+@import "./pageStyles/about.scss";
+@import "./pageStyles/dashboard.scss";
+@import "./pageStyles/nomatch.scss";
+@import "./pageStyles/contact.scss";
+
+
+@import "./authStyles/login.scss";
+@import "./authStyles/signin.scss";
+
+// #c3c3eb

@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import Login from "../pages/login";
 
 const Navigation = (props) => {
   return (
@@ -19,6 +20,7 @@ const Navigation = (props) => {
         <div className="nav-single">
           <NavLink to="/contact" activeClassName="nav-link-active">Contact</NavLink>
         </div>
+        <NavLink to="/login" activeClassName="nav-link-active">Login</NavLink>
       </div>
     </div>
   )

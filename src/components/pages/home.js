@@ -7,7 +7,7 @@ import Month from '../months/month';
 const Home = (props) => {
   return (
     <div className="home-container">
-      <h3 className="home-title">Explore our Term's</h3>
+      <h1 className="home-title">Explore our Product's</h1>
       
       <div className="links-container">
         <div className="single-link">

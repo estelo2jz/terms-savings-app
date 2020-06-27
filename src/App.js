@@ -17,6 +17,13 @@ import OneMonth from './components/months/oneMonth';
 import TwoMonth from './components/months/twoMonth';
 import ThreeMonth from './components/months/threeMonth';
 
+import AccountDetails from './components/pages/dashpages/accountdetails';
+import Last from './components/pages/dashpages/last';
+import Next from './components/pages/dashpages/next';
+import Roster from './components/pages/dashpages/roster';
+import Settings from './components/pages/dashpages/settings';
+import TotalEarn from './components/pages/dashpages/totalearn';
+
 import './App.scss';
 
 export default class App extends Component {
@@ -39,6 +46,13 @@ export default class App extends Component {
               <Route path="/oneMonth" component={OneMonth} />
               <Route path="/twoMonth" component={TwoMonth} />
               <Route path="/threeMonth" component={ThreeMonth} />
+
+              <Route path="/accountdetails" component={AccountDetails} />
+              <Route path="/next" component={Next} />
+              <Route path="/roster" component={Roster} />
+              <Route path="/settings" component={Settings} />
+              <Route path="/totalearn" component={TotalEarn} />
+              <Route path="/last" component={Last} />
 
               <Route component={NoMatch} />
             </Switch>

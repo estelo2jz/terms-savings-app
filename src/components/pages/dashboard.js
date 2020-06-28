@@ -17,10 +17,9 @@ export default class Dashboard extends Component {
   render() {
     return (
       <Router>
-        <div className="dashboard-container">
-          <h1>Dashboard</h1>
+        <div className="dashboard">
           <DashNav />
-          <div className="dashboard-space-one">
+          {/* <div className="dashboard-space-one">
             <div className="dashboard-space-container">
               <div className="dashboard-space-two">
                 <div className="dashboard-heading">Next Payment</div>
@@ -82,7 +81,7 @@ export default class Dashboard extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <Switch>
             <Route exact path="/" />

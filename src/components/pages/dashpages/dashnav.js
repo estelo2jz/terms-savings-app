@@ -5,13 +5,25 @@ import { NavLink } from 'react-router-dom';
 class DashNav extends Component {
   render() {
     return (
-      <div>
-        <NavLink to="/last">Account Details</NavLink>
-        <NavLink to="/totalearn">Total Earnings</NavLink>
-        <NavLink to="/last">Last Payment</NavLink>
-        <NavLink to="/next">Next Payment</NavLink>
-        <NavLink to="/roster">Roster</NavLink>
-        <NavLink to="/settings">Settings</NavLink>
+      <div className="dashboard-container">
+        <div className="dashboard-links">
+          <NavLink to="/accountdetails" activeClassName="nav-link-active">Account Details</NavLink>
+        </div>
+        <div className="dashboard-links">  
+          <NavLink to="/totalearn" activeClassName="nav-link-active">Total Earnings</NavLink>
+        </div>
+        <div className="dashboard-links">  
+          <NavLink to="/last" activeClassName="nav-link-active">Last Payment</NavLink>
+        </div>
+        <div className="dashboard-links">  
+          <NavLink to="/next" activeClassName="nav-link-active">Next Payment</NavLink>
+        </div>
+        <div className="dashboard-links">  
+          <NavLink to="/roster" activeClassName="nav-link-active">Roster</NavLink>
+        </div>
+        <div className="dashboard-links">  
+          <NavLink to="/settings" activeClassName="nav-link-active">Settings</NavLink>
+        </div>
       </div>
     )
   }
